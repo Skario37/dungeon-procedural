@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html language="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+	<title> PDM </title>
+	<link rel="manifest" href="manifest.json" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="icon" type="image/x-icon" href="favicon.png" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+	<div class="algodiv">
+		<label for="algo-select">Algorithm:</label>
+		<select id="algo-select" class="algo-select">
+			<option value="standard" selected>Standard, 1/2 width</option>
+			<option value="oneroom" disabled>One-room monster house</option>
+			<option value="denseoutside" disabled>Dense, corridors outside</option>
+			<option value="denseinside" disabled>Dense, corridors inside</option>
+			<option value="twolarge" disabled>Two large rooms, one is a monster house</option>
+			<option value="fiveroomline" disabled>Five-room, line arrangement</option>
+			<option value="fiveroomcross" disabled>Five-room, cross arrangement</option>
+			<option value="standardfull">Standard, full width</option>
+			<option value="middleroom" disabled>Middle-room layout</option>
+			<option value="circularroom" disabled>Circular layout</option>
+			<option value="standardthird">Standard, 3/4 width</option>
+		</select>
+	</div>
+	<div class="buttondiv">
+		<button onclick="init()">Generate</button>
+		<button onclick="nextRoom()">Next Room</button>
+	</div>
+	<script src="game/Level.js"></script>
+	<script src="game/main.js"></script>
+</body>
+</html>
