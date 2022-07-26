@@ -79,7 +79,7 @@ class Level {
         const y = this.oddRng(1, this.stage.length - h - 1);
         const room = { h: h, w: w, x: x, y: y };
         if (x + w >= this.stage[0].length || y + h >= this.stage.length) {
-            throw new Error('Oi! That room is too big.', room);
+            throw new Error("Hey c'trop grand là.", room);
         }
         return room;
     };
@@ -88,7 +88,7 @@ class Level {
         for(let y = room.y; y <= room.y + room.h; y++) {
             for(let x = room.x; x <= room.x + room.w; x++) {
                 if(x >= this.stage[0].length || y >= this.stage.length) {
-                    throw new Error('Oi! That\'s out of bounds!', x, y);
+                    throw new Error('Hey bah non ça sort des limites là.', x, y);
                 }
                 if (this.stage[y][x] !== 0) {
                     return true;
