@@ -1,6 +1,5 @@
-# dungeon-procedural
+# [dungeon-procedural](https://skario37.github.io/dungeon-procedural/)
  
-Don't look at code, it's weird and awfully
-Only brain gym
+Don't look at code, it's weird and awfully, only brain gym.
 
-https://skario37.github.io/dungeon-procedural/
+Based on Pokémon Mystery Dungeon.
